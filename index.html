@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="dark">
+
+<div class="container">
+    <div class="top">
+        <div>
+        <h2 class="title">STOPWATCH</h2>
+        <p class="subtitle">Precision time tracker</p>
+    </div>
+    <button id="themeToggle">🌙</button>
+    </div>
+
+    <div id="display">00:00:00:000</div>
+
+    <div class="buttons">
+        <button id="startBtn" class="start">Start</button>
+        <button id="lapBtn">Lap</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Lap</th>
+                <th>Time</th>
+                <th>+/- Prev</th>
+            </tr>
+        </thead>
+        <tbody id="laps"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
